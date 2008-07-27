@@ -7,6 +7,10 @@ body {
 	margin: 0;
 }
 
+img {
+	border: 0;
+}
+
 ul, li {
   list-style-type: none;
   margin: 0;
@@ -134,6 +138,10 @@ h2.post-title a{
 	color: #454545;
 }
 
+h2.post-title a:hover {
+	color: #555555;
+}
+
 .post-entry p {
 	font-size: 1.1em;
 	color: #212121;
@@ -161,7 +169,7 @@ h2.post-title a{
 #catnav img {
 	float: right;
 	margin-right: 10px;
-	margin-top: -18px;
+	margin-top: -20px;
 }
 
 #catnav li{
@@ -173,16 +181,21 @@ h2.post-title a{
 
 #catnav li a {
 	display: block;
+	margin-left: -15px;
+	padding: 5px 5px 5px 15px;
+	margin-top: -5px;
+	margin-bottom: 0;
 }
 
 #catnav li:hover {
 	background: #ffffff;
+	width: 200px;
 	margin-left: -1px;
-	cursor: pointer;
+	border-bottom: 1px solid #999999;
 }
 
 #catnav li.active {
-	background: #ffffff;
+	background: #ffffff url(images/greenbullet.png) left no-repeat;
 	width: 200px;
 	margin-left: -1px;
 }
@@ -209,6 +222,11 @@ h2.post-title a{
 	float: left;
 	clear: right;
 	padding: 10px;
+}
+
+.linkdesc img {
+	margin-bottom: -5px;
+	margin-right: 5px;
 }
 
 .linkauthor {
