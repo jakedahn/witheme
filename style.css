@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-	color: #e6532b;
+	color: #da4f29;
 }
 
 
@@ -38,8 +38,8 @@ blockquote {
 	font: 1.3em/1.69em georgia, serif;
 	background: #e6eadc url(images/quote.png) top left no-repeat;
 	padding: 19px;
-	width: 430px;
-	margin-left: 0;
+	width: 450px;
+	margin-left: -20px;
 	border-top: 1px solid #cccccc;
 	border-bottom: 1px solid #cccccc;
 }
@@ -112,8 +112,7 @@ blockquote p {
 }
 
 
-
-
+/* Main Content */
 
 #content {
 	width: 450px;
@@ -132,8 +131,14 @@ blockquote p {
 	color: #47beb8;
 }
 
+h2.post-title {
+	font: 3.5em georgia, serif;
+	font-weight: bold;
+	color: #454545;
+	margin: 0;
+}
+
 h2.post-title a{
-	font: 2.3em georgia, serif;
 	font-weight: bold;
 	color: #454545;
 }
@@ -147,11 +152,37 @@ h2.post-title a:hover {
 	color: #212121;
 }
 
+p#single-post-footer {
+	font-size: .9em;
+	color: #b8b8b8;
+	border-top: 1px dotted #cccccc;
+	border-bottom: 1px dotted #cccccc;
+	padding: 10px;
+	background: #f9f9f9;
+}
+
+p#single-post-footer:hover {
+	color: #666666;
+	border-top: 1px dotted #cccccc;
+	border-bottom: 1px dotted #cccccc;
+	padding: 10px;
+	background: #fff;
+}
+
+p#single-post-footer:hover a {
+	color: #f8724d;
+}
+
+p#single-post-footer:hover a:hover {
+	color: #da4f29;
+}
+
+p#single-post-footer a{
+	color: #f4b7a6;
+}
 
 
-
-
-
+/* Middlebar */
 
 #middlebar {
 	width: 194px;
@@ -189,9 +220,9 @@ h2.post-title a:hover {
 
 #catnav li:hover {
 	background: #ffffff;
-	width: 200px;
+	width: 201px;
 	margin-left: -1px;
-	border-bottom: 1px solid #999999;
+	border-bottom: 1px solid #888888;
 }
 
 #catnav li.active {
@@ -211,11 +242,15 @@ h2.post-title a:hover {
 
 }
 
-
 .highlightlink img {
 	margin-bottom: -5px;
 	margin-right: 5px;
 }
+
+
+
+/* Sidebar */
+
 
 #sidebar {
 	width: 174px;
@@ -240,9 +275,104 @@ h2.post-title a:hover {
 	margin-bottom: 10px;
 }
 
+
+
+/******************
+	BELOW FOLD
+******************/
+
+#randompost {
+	clear: both;
+	background: #fff;
+	width: 900px;
+	border-top: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+h2.randomtitle a{
+	font: 1.5em georgia, serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #454545;
+}
+
+
+/* Columns */
+
+h3#commentshead {
+	font-size: 2.3em;
+}
+
+.column {
+	float: left;
+	width: 204px;
+	height: 600px;
+	background: #fff;
+	border-left: 1px solid #ccc;
+	padding: 10px;
+	border-top: 1px solid #cccccc;
+}
+
+#firstcol {
+	border-left: none;
+}
+
+/*comments */
+
+div#comments {
+	font-size: .9em;
+}
+
+ol.commentlist {
+	list-style-type: none;
+	margin-left: -40px;
+}
+
+ol.commentlist li {
+	padding: 1em;
+	background: #ebebeb;	
+	border: 1px dotted #a3a3a3;
+	position: relative;
+	margin-bottom: 15px !important;
+}
+
+ol.commentlist li.alt {
+	background: #f9f9f9;
+}
+
+p.comment-author {
+	margin-bottom: -10px;
+	display: block;
+	text-transform: capitalize;
+	font-size: 1.1em;
+	color: #444;
+}
+
+p.comment-author img {
+	float: left !important; 
+	margin-right: 10px !important; 
+	border: none !important; 
+	display:inline !important;
+}
+
+.comment-meta {
+	font-size: 8px !important;
+	margin-left: 50px;
+	color: #666;
+}
+
+div#respond h3 {
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+
+/* Footer */
+
 #footer {
 	background: #ffffff;
 	border-top: 1px solid #cccccc;
 	width: 900px;
 	clear: both;
 }
+

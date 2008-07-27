@@ -28,17 +28,18 @@ foreach ($comments as $comment) {
 
 <?php if ($numComments != 0) : ?>
 
-	<h3 class="comment-header" id="commentz">Comments</h3>
+	<h3 class="comment-header" id="commentshead">Comments</h3>
 
 	<ol class="commentlist">
+
 
 <?php foreach ($comments as $comment) : ?>
 <?php if (get_comment_type() == "comment"){ ?>
 
 		<li id="comment-<?php comment_ID() ?>" class="<?php echo $oddcomment; ?>">
-			<p class="comment-author"><strong><?php comment_author_link() ?></strong></p>
+			<p class="comment-author"><strong><?php comment_author_link() ?></strong></p> 
 			<?php if ($comment->comment_approved == '0') : ?><em>Your comment is awaiting moderation.</em><?php endif; ?>
-			<p class="comment-metadata">Posted <?php comment_date('d M Y') ?> at <?php comment_time('g:i a') ?> | <a href="#comment-<?php comment_ID() ?>" title="Permalink to this comment" rel="permalink">Permalink</a> <?php edit_comment_link('(Edit)', ' ', ''); ?></p>
+			<p class="comment-meta">Posted on <strong><?php comment_date('d M Y') ?></strong> at <strong><?php comment_time('g:i a') ?></strong> | <a href="#comment-<?php comment_ID() ?>" title="Permalink to this comment" rel="permalink">Permalink</a> <?php edit_comment_link('(Edit)', ' ', ''); ?></p>
 			<?php comment_text() ?>
 		</li>
 

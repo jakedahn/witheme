@@ -8,7 +8,7 @@
 
 <?php $post = $posts[0]; // HACK FROM KUBRICK ?>
 <?php /* IF CATEGORY ARCHIVE */ if (is_category()) { ?>				
-			<h2 class="page-title">Category Archives: <?php echo single_cat_title(); ?></h2>
+			<span class="series"><img src="http://looce.com/wordpress/wp-content/themes/wakingideas/images/topicblock.png" alt="" /> <?php echo single_cat_title(); ?> Archive</span>
 <?php /* IF MONTHY ARCHIVE */ } elseif (is_date()) { ?>
 			<h2 class="page-title">Monthly Archives: <?php the_time('F Y'); ?></h2>
 <?php /* IF ANOTHER PAGE OF ARCHIVES */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
@@ -16,16 +16,14 @@
 <?php } ?>
 
 <?php while (have_posts()) : the_post(); ?>
+      <div id="post-<?php the_ID(); ?>" class="post">
+        <h2 class="post-title"><a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+        <p class="post-date">Written by <strong><?php the_author(); ?></strong>. Posted on <strong><?php the_time('F jS Y') ?></strong></p>
+        <div class="post-entry">
+          <?php the_excerpt('<span class="more-link">Continue Reading &raquo;</span>'); ?>
+          <a href="<?php the_permalink(); ?>" title="Read More">Read More »</a>
+        </div><!-- END POST-ENTRY -->
 
-			<div id="post-<?php the_ID(); ?>" class="post">
-				<h3 class="post-title"><a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-				<p class="post-date"><?php the_time('F jS Y') ?></p>
-				<div class="post-entry">
-					<?php the_excerpt(); ?>
-					<!-- <?php trackback_rdf(); ?> -->
-				</div><!-- END POST-ENTRY -->
-				<p class="post-footer">Posted in <?php the_category(', ') ?> | <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="permalink">Permalink</a> | <?php edit_post_link('Edit', '', ' | '); ?> <?php comments_popup_link('Comments (0)', 'Comments (1)', 'Comments (%)'); ?></p>
-			</div><!-- END POST -->
 	
 <?php endwhile; ?>
 

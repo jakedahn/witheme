@@ -1,16 +1,10 @@
 <?php get_header(); ?>
 	
-	<div id="container">
-
 		<div id="content">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	
-			<div class="navigation">
-				<div class="nav-left"><?php previous_post_link('&laquo; %link') ?></div>
-				<div class="nav-right"><?php next_post_link('%link &raquo;') ?></div>
-			</div><!-- END NAVIGATION -->
-
+  <?php $series = get_post_meta($post->ID, 'series', true); ?>
+      <span class="series"><img src="http://looce.com/wordpress/wp-content/themes/wakingideas/images/topicblock.png" alt="" /> Part of the <a href="#"><?php print $series; ?></a> Series</span>
 			<div id="post-<?php the_ID(); ?>" class="post">
 				<h2 class="post-title"><?php the_title(); ?></h2>
 				<div class="post-entry">
@@ -19,9 +13,9 @@
 					<!-- <?php trackback_rdf(); ?> -->
 				</div><!-- END POST-ENTRY -->
 				<p id="single-post-footer">
-					This entry was posted on <?php the_time('l, F jS, Y') ?> at <?php the_time() ?> and is filed under <?php the_category(', ') ?>. You can follow any responses to this entry through the <?php comments_rss_link('RSS 2.0'); ?> feed.
+					This entry was posted on <strong><?php the_time('l, F jS, Y') ?></strong> at <strong><?php the_time() ?></strong> and is filed under <strong><?php the_category(', ') ?></strong>. You can follow any responses to this entry through the <?php comments_rss_link('RSS 2.0'); ?> feed.
 <?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) { // COMMENTS & PINGS OPEN ?>
-					<a href="#respond">Post a comment</a> or leave a trackback: <a href="<?php trackback_url(true); ?>" rel="trackback">Trackback URI</a>.
+					<br /><br />Feel free to <a href="#respond">Post a comment</a> or leave a trackback: <a href="<?php trackback_url(true); ?>" rel="trackback">Trackback URI</a>.
 <?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) { // PINGS ONLY OPEN ?>
 					Comments are closed, but you can leave a trackback: <a href="<?php trackback_url(true); ?>" rel="trackback">Trackback URI</a>.
 <?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) { // COMMENTS OPEN ?>
@@ -46,7 +40,5 @@
 <?php endif; ?>
 
 		</div><!-- END CONTENT -->
-	</div><!-- END CONTAINER  -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

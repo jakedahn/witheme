@@ -3,7 +3,6 @@
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
         <?php $series = get_post_meta($post->ID, 'series', true); ?>
-        
         <div id="post-<?php the_ID(); ?>" class="post">
           <span class="series"><img src="http://looce.com/wordpress/wp-content/themes/wakingideas/images/topicblock.png" alt="" /> Part of the <a href="#"><?php print $series; ?></a> Series</span>
           <h2 class="post-title"><a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
@@ -34,4 +33,5 @@
     </div><!-- END CONTENT -->
 
 <?php get_sidebar(); ?>
+<?php include('belowfold.php') ?>
 <?php get_footer(); ?>
