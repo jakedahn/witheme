@@ -188,6 +188,48 @@ p#single-post-footer a{
 	color: #f4b7a6;
 }
 
+.navigation{
+	width: 449px;
+	margin-top: 32px;
+}
+
+.nav-left a {
+	background: url(images/olderbutton.png) no-repeat;
+	display: block;
+	width: 218px;
+	height: 19px;
+	padding: 8px;
+	float: left;
+	margin-left: -17px;
+}
+
+.nav-left a:hover {
+	background-position: 0;
+}
+
+.nav-left a:active {
+	background-position: bottom;
+}
+
+.nav-right a {
+	background: url(images/newerbutton.png) no-repeat;
+	display: block;
+	width: 218px;
+	height: 19px;
+	padding: 8px;
+	text-align: right;
+	float: right;
+	margin-left: -2px;
+}
+
+.nav-right a:hover {
+	background-position: 0;
+}
+
+.nav-right a:active {
+	background-position: bottom;
+}
+
 
 /* Middlebar */
 

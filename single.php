@@ -4,7 +4,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <?php $series = get_post_meta($post->ID, 'series', true); ?>
-      <span class="series"><img src="http://looce.com/wordpress/wp-content/themes/wakingideas/images/topicblock.png" alt="" /> Part of the <a href="#"><?php print $series; ?></a> Series</span>
+      <span class="series"><img src="http://looce.com/wordpress/wp-content/themes/wakingideas/images/topicblock.png" alt="" /> Part of the <?php the_tags('', '', ''); ?> Series</span>
 			<div id="post-<?php the_ID(); ?>" class="post">
 				<h2 class="post-title"><?php the_title(); ?></h2>
 				<div class="post-entry">
