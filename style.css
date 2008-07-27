@@ -1,0 +1,182 @@
+/* @override http://looce.com/wordpress/wp-content/themes/wakingideas/style.css */
+
+/* misc */
+
+body {
+	font: 62.5%/1.9em Verdana, "Lucida Grande", Lucida,  sans-serif;
+	margin: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	color: #f7592e;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e6532b;
+}
+
+
+h3 {
+	font: 1.7em georgia, serif;
+	font-weight: bold;
+	color: #454545;
+}
+
+blockquote {
+	background: #e6eadc;
+	padding: 19px;
+	width: 430px;
+	margin-left: 0;
+	border-top: 1px solid #cccccc;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	border-top: 10px solid #65968f;
+	background: url('images/background.png');
+}
+
+
+/* Header */
+
+#header {
+	font-size: 1em;
+	width: 900px;
+	float: left;
+	background: #ffffff;
+	padding-bottom: 10px;
+}
+
+#blog-title a{
+	font: 2.4em georgia, serif;
+	text-decoration: none;
+	color: #454545;
+}
+
+#blog-description {
+	font-size: .9em;
+	font-weight: bold;
+	color: #47beb8;
+	margin-left: 11px;
+	margin-bottom: 0;
+	margin-top: -10px;
+}
+
+#blog-description span {
+	color: #65968f;
+}
+
+#weeklytopic {
+	background: #e6eadc;
+	font-size: 1.2em;
+	width: 280px;
+	float: right;
+	margin-top: -69px;
+	text-align: right;
+	padding: 5px;
+}
+
+#weeklytopic p {
+	margin: 0;
+}
+
+#wtopic {
+	font-family: georgia;
+}
+
+#headerimage {
+	padding-top: 5px;
+	padding-bottom: 1px;
+	float: left;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #ccc;
+	background: #ffffff;
+}
+
+
+
+
+
+#content {
+	width: 450px;
+	float: left;
+	padding: 20px;
+}
+
+.series {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #666666;
+	text-transform: uppercase;
+}
+
+.series a {
+	color: #47beb8;
+}
+
+h2.post-title a{
+	font: 3em georgia, serif;
+	font-weight: bold;
+	color: #454545;
+}
+
+.post-entry p {
+	font-size: 1.1em;
+	color: #212121;
+}
+
+#middlebar {
+	width: 194px;
+	float: left;
+	padding: 10px;
+}
+
+#highlights p {
+	margin-top: 0;
+}
+
+.highlightlink a{
+	color: #47beb8;
+	font-size: 1.2em;
+	font-weight: bold;
+
+}
+
+
+.highlightlink img {
+	margin-bottom: -5px;
+	margin-right: 5px;
+}
+
+#sidebar {
+	width: 174px;
+	float: left;
+	clear: right;
+	padding: 10px;
+}
+
+.linkauthor {
+	font: 1.1em georgia, serif;
+	color: #65968f;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.linkdesc{
+	margin-bottom: 10px;
+}
+
+#footer {
+	width: 900px;
+	height: 200px;
+	clear: both;
+}

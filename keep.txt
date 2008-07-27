@@ -1,0 +1,2 @@
+<a href="<?php bloginfo('rss2_url'); ?>" title="<?php bloginfo('name'); ?> RSS 2.0 Feed" rel="alternate" type="application/rss+xml">All posts</a>
+

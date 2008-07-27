@@ -1,0 +1,5 @@
+series img http://looce.com/wordpress/wp-content/themes/wakingideas/images/topicblock.png
+
+headerimg
+
+link img
