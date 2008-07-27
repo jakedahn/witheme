@@ -1,8 +1,7 @@
     <div id="middlebar">
-      <ul>
-        <li><a href="#">The Front Page</a></li>
+      <ul id="catnav">
+        <li class="active"><a href="#">The Front Page</a><a href="<?php echo get_settings('home'); ?>"><img src="http://looce.com/wordpress/wp-content/themes/wakingideas/images/feedicon.png" alt="Subscribe to RSS"</a></li>
       	<?php wp_list_categories('sort_column=id&exclude=9,10&title_li='); ?>
-      	<li><a href="#">The Back Page</a></li>
       </ul>
       <h3>Issue Highlights</h3>
       <ul id="highlights">

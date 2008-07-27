@@ -31,11 +31,16 @@ h3 {
 }
 
 blockquote {
-	background: #e6eadc;
+	font: 1.3em/1.69em georgia, serif;
+	background: #e6eadc url(images/quote.png) top left no-repeat;
 	padding: 19px;
 	width: 430px;
 	margin-left: 0;
 	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+blockquote p {
+	color: #454545 !important;
 }
 
 #wrapper {
@@ -68,7 +73,7 @@ blockquote {
 	color: #47beb8;
 	margin-left: 11px;
 	margin-bottom: 0;
-	margin-top: -10px;
+	margin-top: -16px;
 }
 
 #blog-description span {
@@ -124,7 +129,7 @@ blockquote {
 }
 
 h2.post-title a{
-	font: 3em georgia, serif;
+	font: 2.3em georgia, serif;
 	font-weight: bold;
 	color: #454545;
 }
@@ -134,10 +139,52 @@ h2.post-title a{
 	color: #212121;
 }
 
+
+
+
+
+
+
 #middlebar {
 	width: 194px;
 	float: left;
 	padding: 10px;
+}
+
+#catnav {
+	width: 216px;
+	margin-left: -11px;
+	border-top: 1px solid #cccccc;
+	margin-top: -11px;
+}
+
+#catnav img {
+	float: right;
+	margin-right: 10px;
+	margin-top: -18px;
+}
+
+#catnav li{
+	height: 25px;
+	padding-left: 15px;
+	padding-top: 5px;
+	border-bottom: 1px solid #cccccc;
+}
+
+#catnav li a {
+	display: block;
+}
+
+#catnav li:hover {
+	background: #ffffff;
+	margin-left: -1px;
+	cursor: pointer;
+}
+
+#catnav li.active {
+	background: #ffffff;
+	width: 200px;
+	margin-left: -1px;
 }
 
 #highlights p {
@@ -176,7 +223,8 @@ h2.post-title a{
 }
 
 #footer {
+	background: #ffffff;
+	border-top: 1px solid #cccccc;
 	width: 900px;
-	height: 200px;
 	clear: both;
 }
