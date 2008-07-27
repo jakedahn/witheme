@@ -29,7 +29,7 @@
           </div><!-- END POST-ENTRY  -->
         </div><!-- END POST -->
 
-<?php endif; ?>
+<?php endif; ?> 
 
     </div><!-- END CONTENT -->
 
