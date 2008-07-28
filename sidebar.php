@@ -2,12 +2,12 @@
       <ul id="catnav">
         <li<?php if (is_home()) { echo " class=\"active\"";}?>><a href="<?php echo get_settings('home'); ?>">The Front Page</a><a href="<?php echo get_settings('home'); ?>"><img src="http://looce.com/wordpress/wp-content/themes/wakingideas/images/feedicon.png" alt="Subscribe to RSS" /></a></li>
         
-        <li<?php if (is_category('3')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('3');?> ">Guest Editorials</a></li>
-        <li<?php if (is_category('7')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('7');?> ">Life Stories</a></li>
-        <li<?php if (is_category('11')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('11');?> ">Music</a></li>
-        <li<?php if (is_category('8')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('8');?> ">Photography</a></li>
-        <li<?php if (is_category('5')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('5');?> ">Politics</a></li>
-        <li<?php if (is_category('4')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('4');?> ">Popular Culture</a></li>
+        <li<?php if (is_category('4')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('4');?> ">Guest Editorials</a></li>
+        <li<?php if (is_category('6')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('6');?> ">Life Stories</a></li>
+        <li<?php if (is_category('8')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('8');?> ">Music</a></li>
+        <li<?php if (is_category('9')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('9');?> ">Photography</a></li>
+        <li<?php if (is_category('10')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('10');?> ">Politics</a></li>
+        <li<?php if (is_category('11')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('11');?> ">Popular Culture</a></li>
 
         
       </ul>
