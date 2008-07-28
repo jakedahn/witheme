@@ -6,28 +6,56 @@
   <div class="column" id="firstcol">
     <h3 id="culture">Culture</h3>
     <ul id="culture">
-      <?php c2c_get_recent_posts($num_posts=5,  $format = "<li><span class=\"highlightlink\"><img src=\"http://looce.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png\" alt=\"link\" />  %post_URL%</span><br /> %post_excerpt_short%</li>", $categories = '11'); ?>
+      <?php query_posts("showposts=3&cat=11"); ?>
+            <?php while (have_posts()) : the_post(); ?>    
+          <li>
+            <span class="highlightlink"><img src="http://wakingideas.com.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png" alt="link" /> <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
+            </span>
+            <?php the_excerpt()?>
+          </li>
+        <?php endwhile; ?>
     </ul>
   </div>
   
   <div class="column">
     <h3 id="politics">Politics</h3>
     <ul id="politics">
-       <?php c2c_get_recent_posts(); ?>
+      <?php query_posts("showposts=3&cat=9"); ?>
+            <?php while (have_posts()) : the_post(); ?>    
+          <li>
+            <span class="highlightlink"><img src="http://wakingideas.com.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png" alt="link" /> <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
+            </span>
+            <?php the_excerpt()?>
+          </li>
+        <?php endwhile; ?>
     </ul>
   </div>
   
   <div class="column">
     <h3 id="music">Music</h3>
     <ul id="music">
-       <?php c2c_get_recent_posts($num_posts=5,  $format = "<li><span class=\"highlightlink\"><img src=\"http://looce.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png\" alt=\"link\" />  %post_URL%</span><br /> %post_excerpt_short%</li>", $categories = '9'); ?>
+      <?php query_posts("showposts=3&cat=9"); ?>
+            <?php while (have_posts()) : the_post(); ?>    
+          <li>
+            <span class="highlightlink"><img src="http://wakingideas.com.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png" alt="link" /> <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
+            </span>
+            <?php the_excerpt()?>
+          </li>
+        <?php endwhile; ?>
     </ul>
   </div>
   
   <div class="column">
     <h3 id="lifestories">Life Stories</h3>
     <ul id="lifestories">
-       <?php c2c_get_recent_posts($num_posts=5,  $format = "<li><span class=\"highlightlink\"><img src=\"http://looce.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png\" alt=\"link\" />  %post_URL%</span><br /> %post_excerpt_short%</li>", $categories = '6'); ?>
+      <?php query_posts("showposts=5&cat=6"); ?>
+            <?php while (have_posts()) : the_post(); ?>    
+          <li>
+            <span class="highlightlink"><img src="http://wakingideas.com.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png" alt="link" /> <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
+            </span>
+            <?php the_excerpt()?>
+          </li>
+        <?php endwhile; ?>
     </ul>
   </div>
 </div>
