@@ -26,5 +26,5 @@
         </div>
       </div>
       <div id="headerimage">
-        <img src="http://looce.com/wordpress/wp-content/themes/wakingideas/images/h1.jpg" alt="HEADER TITLE" />
+        <img src="http://wakingideas.com/wordpress/wp-content/images/header/h2.jpg" alt="" />
       </div>

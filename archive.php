@@ -6,7 +6,7 @@
 
 <?php $post = $posts[0]; // HACK FROM KUBRICK ?>
 <?php /* IF CATEGORY ARCHIVE */ if (is_category()) { ?>				
-			<span class="series"><img src="http://looce.com/wordpress/wp-content/themes/wakingideas/images/topicblock.png" alt="" /> <?php echo single_cat_title(); ?> Archive</span>
+			<span class="series"><img src="http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/topicblock.png" alt="" /> <?php echo single_cat_title(); ?> Archive</span>
 <?php /* IF MONTHY ARCHIVE */ } elseif (is_date()) { ?>
 			<h2 class="page-title">Monthly Archives: <?php the_time('F Y'); ?></h2>
 <?php /* IF ANOTHER PAGE OF ARCHIVES */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
