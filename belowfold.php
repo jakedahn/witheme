@@ -20,7 +20,7 @@
   <div class="column">
     <h3 id="politics">Politics</h3>
     <ul id="politics">
-      <?php query_posts("showposts=3&cat=9"); ?>
+      <?php query_posts("showposts=3&cat=10"); ?>
             <?php while (have_posts()) : the_post(); ?>    
           <li>
             <span class="highlightlink"><img src="http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png" alt="link" /> <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
@@ -34,7 +34,7 @@
   <div class="column">
     <h3 id="music">Music</h3>
     <ul id="music">
-      <?php query_posts("showposts=3&cat=9"); ?>
+      <?php query_posts("showposts=3&cat=8"); ?>
             <?php while (have_posts()) : the_post(); ?>    
           <li>
             <span class="highlightlink"><img src="http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png" alt="link" /> <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
