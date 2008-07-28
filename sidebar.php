@@ -21,4 +21,4 @@
       <ul>
       <?php c2c_get_recent_posts($num_posts=7,  $format = "<li><span class=\"linkauthor\">%post_author%</span> <br /> <div class=\"linkdesc\"><img src=\"http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png\" alt=\"link\" /> %post_content%</div></li>", $categories = '7'); ?>
       </ul>
-    </div>
+    </div> 
