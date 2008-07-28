@@ -12,7 +12,7 @@
       </ul>
       <h3>Issue Highlights</h3>
       <ul id="highlights">
-        <?php c2c_get_recent_posts($num_posts=7,  $format = "<li><span class=\"highlightlink\"><img src=\"http://looce.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png\" alt=\"link\" />  %post_URL%</span><br /> %post_excerpt_short%</div></li>"); ?>
+        <?php c2c_get_recent_posts($num_posts=7,  $format = "<li><span class=\"highlightlink\"><img src=\"http://looce.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png\" alt=\"link\" />  %post_URL%</span><br /> %post_excerpt%</div></li>"); ?>
       </ul>    
     </div>
 
