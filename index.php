@@ -15,7 +15,7 @@
           </div><!-- END POST-ENTRY -->
          
         </div><!-- END POST -->
-
+ 
 <?php comments_template(); ?>
 
 <?php endwhile; ?>
