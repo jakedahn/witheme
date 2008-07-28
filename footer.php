@@ -8,6 +8,6 @@
 	</div><!-- END FOOTER -->
 
 </div><!-- END WRAPPER -->
-
+<script src="/mint/?js" type="text/javascript"></script>
 </body>
 </html>
