@@ -22,7 +22,7 @@
         <div id="weeklytopic">
           <p id="wtopic">WEEKLY TOPIC</p>
           <p class="topicname">The 'Still Fresh' Effect That Gets To Us All:</p>
-          <p class="topiclink"><a href="#">C'mon you know what I'm talkin' about</a></p>
+          <p class="topiclink"><a href="http://wakingideas.com/wordpress/series/still-fresh-effect/">C'mon you know what I'm talkin' about</a></p>
         </div>
       </div>
       <div id="headerimage">
