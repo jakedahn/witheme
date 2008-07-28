@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div id="content">
 <?php if (have_posts()) : ?>
-  <?php query_posts("cat=-9"); ?>
+  <?php query_posts("cat=-7"); ?>
 <?php while (have_posts()) : the_post(); ?>
   
   
