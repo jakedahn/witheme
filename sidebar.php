@@ -12,7 +12,7 @@
       </ul>
       <h3>Recent Articles</h3>
       <ul id="highlights">
-        <?php query_posts("showposts=5"); ?>
+        <?php query_posts("showposts=3"); ?>
               <?php while (have_posts()) : the_post(); ?>    
             <li>
               <span class="highlightlink"><img src="http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png" alt="link" /> <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
