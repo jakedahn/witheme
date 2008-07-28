@@ -12,7 +12,7 @@
       </ul>
       <h3>Recent Articles</h3>
       <ul id="highlights">
-        <?php query_posts("showposts=3"); ?>
+        <?php query_posts("showposts=2"); ?>
               <?php while (have_posts()) : the_post(); ?>    
             <li>
               <span class="highlightlink"><img src="http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png" alt="link" /> <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
@@ -26,6 +26,6 @@
     <div id="sidebar"> 
       <h3>Outside the Box</h3>
       <ul>
-      <?php c2c_get_recent_posts($num_posts=7,  $format = "<li><span class=\"linkauthor\">%post_author%</span> <br /> <div class=\"linkdesc\"><img src=\"http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png\" alt=\"link\" /> %post_content%</div></li>", $categories = '7'); ?>
+      <?php c2c_get_recent_posts($num_posts=5,  $format = "<li><span class=\"linkauthor\">%post_author%</span> <br /> <div class=\"linkdesc\"><img src=\"http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png\" alt=\"link\" /> %post_content%</div></li>", $categories = '7'); ?>
       </ul>
     </div>
