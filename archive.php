@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 	
-	<div id="container">
-
 		<div id="content">
 
 <?php if (have_posts()) : ?>
@@ -44,7 +42,6 @@
 <?php endif; ?>
 		
 		</div><!-- END CONTENT -->
-	</div><!-- END CONTAINER  -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
