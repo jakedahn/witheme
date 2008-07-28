@@ -11,7 +11,7 @@
           <p class="post-date">Written by <strong><?php the_author(); ?></strong>. Posted on <strong><?php the_time('F jS Y') ?></strong></p>
           <div class="post-entry">
             <?php the_content(); ?>
-            <a href="<?php the_permalink(); ?>" title="Read More">Read More »</a>
+            <a href="<?php the_permalink(); ?>" title="Read More">Read and Comment »</a>
           </div><!-- END POST-ENTRY -->
          
         </div><!-- END POST -->
