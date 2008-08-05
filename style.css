@@ -1,3 +1,5 @@
+/* @override http://looce.com/wordpress/wp-content/themes/wakingideas/style.css */
+
 
 /*  
 THEME NAME: Waking Ideas
@@ -128,7 +130,7 @@ blockquote p {
 }
 
 .series {
-	font-size: 1.1em;
+	font-size: .9em;
 	font-weight: bold;
 	color: #666666;
 	text-transform: uppercase;
@@ -138,8 +140,9 @@ blockquote p {
 	color: #47beb8;
 }
 
+
 h2.post-title {
-	font: 3.5em georgia, serif;
+	font: 2.8em georgia, serif;
 	font-weight: bold;
 	color: #454545;
 	margin: 0;
@@ -157,6 +160,10 @@ h2.post-title a:hover {
 .post-entry p {
 	font-size: 1.1em;
 	color: #212121;
+}
+
+.post-entry {
+	margin-bottom: 30px;
 }
 
 p#single-post-footer {
@@ -280,6 +287,10 @@ p#single-post-footer a{
 	margin-left: -1px;
 }
 
+#highlights li {
+	margin-top: 10px;
+}
+
 #highlights p {
 	margin-top: 0;
 }
@@ -306,6 +317,10 @@ p#single-post-footer a{
 	float: left;
 	clear: right;
 	padding: 10px;
+}
+
+#sidebar h3 {
+	margin-top: 0;
 }
 
 .linkdesc img {
