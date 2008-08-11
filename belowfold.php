@@ -48,7 +48,7 @@
   <div class="column">
     <h3 id="lifestories">Life Stories</h3>
     <ul id="lifestories">
-      <?php query_posts("showposts=5&cat=6"); ?>
+      <?php query_posts("showposts=3&cat=6"); ?>
             <?php while (have_posts()) : the_post(); ?>    
           <li>
             <span class="highlightlink"><img src="http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/icon_track.png" alt="link" /> <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
