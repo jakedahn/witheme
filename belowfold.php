@@ -5,7 +5,7 @@
 <div id="categorylistings">
   <div class="column" id="firstcol">
     <h3 id="culture">Culture</h3>
-    <ul id="culture">
+    <ul class="culture">
       <?php query_posts("showposts=3&cat=11"); ?>
             <?php while (have_posts()) : the_post(); ?>    
           <li>
@@ -19,7 +19,7 @@
   
   <div class="column">
     <h3 id="politics">Politics</h3>
-    <ul id="politics">
+    <ul class="politics">
       <?php query_posts("showposts=3&cat=10"); ?>
             <?php while (have_posts()) : the_post(); ?>    
           <li>
@@ -33,7 +33,7 @@
   
   <div class="column">
     <h3 id="music">Music</h3>
-    <ul id="music">
+    <ul class="music">
       <?php query_posts("showposts=3&cat=8"); ?>
             <?php while (have_posts()) : the_post(); ?>    
           <li>
@@ -47,7 +47,7 @@
   
   <div class="column">
     <h3 id="lifestories">Life Stories</h3>
-    <ul id="lifestories">
+    <ul class="lifestories">
       <?php query_posts("showposts=3&cat=6"); ?>
             <?php while (have_posts()) : the_post(); ?>    
           <li>

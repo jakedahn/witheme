@@ -1,6 +1,6 @@
     <div id="middlebar">
       <ul id="catnav">
-        <li<?php if (is_home()) { echo " class=\"active\"";}?>><a href="<?php echo get_settings('home'); ?>">The Front Page</a><a href="<?php echo get_settings('home'); ?>"><a href="<?php bloginfo('rss2_url'); ?>"><img style="margin-top: -25px;" src="http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/feedicon.png" alt="Subscribe to RSS" /></a></a></li>
+        <li<?php if (is_home()) { echo " class=\"active\"";}?>><a href="<?php echo get_settings('home'); ?>">The Front Page</a><a href="<?php bloginfo('rss2_url'); ?>"><img style="margin-top: -25px;" src="http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/feedicon.png" alt="Subscribe to RSS" /></a></li>
         
         <li<?php if (is_category('6')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('6');?> ">Life Stories</a></li>
         <li<?php if (is_category('8')) { echo " class=\"active\"";}?>> <a href="<?php echo get_category_link('8');?> ">Music</a></li>

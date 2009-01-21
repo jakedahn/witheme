@@ -439,3 +439,8 @@ div#respond h3 {
 	width: 900px;
 	clear: both;
 }
+
+
+.post-date a {
+  color: #000000;
+}

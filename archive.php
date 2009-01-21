@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	
+	<div id="wrapper">
 		<div id="content">
 
 <?php if (have_posts()) : ?>
@@ -19,6 +19,7 @@
         <p class="post-date">Written by <strong><?php the_author(); ?></strong>. Posted on <strong><?php the_time('F jS Y') ?></strong></p>
         <div class="post-entry">
           <?php the_content(); ?>
+        </div><!-- END POST-ENTRY -->
         </div><!-- END POST-ENTRY -->
 
 	

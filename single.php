@@ -7,7 +7,7 @@
       <span class="series"><img src="http://wakingideas.com/wordpress/wp-content/themes/wakingideas/images/topicblock.png" alt="" /> Part of the <?php the_tags('', '', ''); ?> Series</span>
 			<div id="post-<?php the_ID(); ?>" class="post">
 				<h2 class="post-title"><?php the_title(); ?></h2>
-				<p class="post-date">Written by <strong><?php the_author(); ?></strong>. Posted on <strong><?php the_time('F jS Y') ?></strong></p>
+				<p class="post-date">Written by <strong><a href="<?php the_author_url(); ?>"><?php the_author(); ?></a></strong>. Posted on <strong><?php the_time('F jS Y') ?></strong></p>
 				<div class="post-entry">
 					<?php the_content('<span class="more-link">Continue Reading &raquo;</span>'); ?>
 					<?php link_pages('<p class="page-link">Pages: ', '</p>', 'number'); ?>

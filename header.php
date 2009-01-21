@@ -19,12 +19,8 @@
       <div id="header">
         <h1 id="blog-title"><a href="<?php echo get_settings('home'); ?>/" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
         <p id="blog-description">AWAKE <span>AND</span> LISTENING</p>
-        <div id="weeklytopic">
-          <p id="wtopic">WEEKLY TOPIC</p>
-          <p class="topicname">The 'Still Fresh' Effect That Gets To Us All:</p>
-          <p class="topiclink"><a href="http://wakingideas.com/series/still-fresh-effect/">C'mon you know what I'm talkin' about</a></p>
-        </div>
+
       </div>
       <div id="headerimage">
-        <img src="http://wakingideas.com/wordpress/wp-content/images/header/h2.jpg" alt="" />
+        <img src="http://wakingideas.com/wordpress/wp-content/images/h2.jpg" alt="" />
       </div>
