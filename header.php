@@ -16,11 +16,26 @@
   <body>
   
     <div id="wrapper">
-      <div id="header">
-        <h1 id="blog-title"><a href="<?php echo get_settings('home'); ?>/" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-        <p id="blog-description">AWAKE <span>AND</span> LISTENING</p>
+        <div id="headcontainer">
+          <div id="header">
 
-      </div>
-      <div id="headerimage">
-        <img src="http://wakingideas.com/wordpress/wp-content/images/h2.jpg" alt="" />
-      </div>
+            <h1 id="blog-title"><a href="<?php echo get_settings('home'); ?>/" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+            <p id="blog-description">AWAKE <span>AND</span> LISTENING</p>
+        
+          </div>
+      
+          <div id="search">
+              <h2>Search for:</h2>
+              <form id="search" method="get" action="<?php bloginfo('home'); ?>/">
+      	
+          		<input id="s" name="s" type="text" value="<?php echo wp_specialchars($s, 1); ?>" tabindex="1" size="20" />
+          		<input id="searchsubmit" name="searchsubmit" type="submit" value="Search" tabindex="2" />
+
+              </form>
+          </div>
+      
+          <div id="headerimage">
+            <img src="http://wakingideas.com/wordpress/wp-content/images/h2.jpg" alt="" />
+          </div>
+        </div>
+      

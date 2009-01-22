@@ -1,5 +1,7 @@
 /* @override http://looce.com/wordpress/wp-content/themes/wakingideas/style.css */
 
+/* @override http://looce.com/wordpress/wp-content/themes/wakingideas/style.css */
+
 
 /*  
 THEME NAME: Waking Ideas
@@ -12,7 +14,9 @@ AUTHOR URI: http://hyperboledesign.com
 /* misc */
 
 body {
-	font: 62.5%/1.9em Verdana, "Lucida Grande", Lucida,  sans-serif;
+	font: 62.5% georgia sans-serif;
+	
+
 	margin: 0;
 }
 
@@ -68,10 +72,15 @@ blockquote p {
 
 #header {
 	font-size: 1em;
-	width: 900px;
+	width: 685px;
 	float: left;
 	background: #ffffff;
 	padding-bottom: 10px;
+}
+
+#headcontainer {
+	background: #ffffff;
+	float: left;
 }
 
 #blog-title a{
@@ -81,7 +90,7 @@ blockquote p {
 }
 
 #blog-description {
-	font-size: .9em;
+	font-size: 1.0em;
 	font-weight: bold;
 	color: #47beb8;
 	margin-left: 11px;
@@ -127,13 +136,17 @@ blockquote p {
 	width: 450px;
 	float: left;
 	padding: 20px;
+	font-size: 1.4em;
 }
 
 .series {
-	font-size: .9em;
+	font-size: .7em;
 	font-weight: bold;
 	color: #666666;
 	text-transform: uppercase;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	margin-bottom: 10px;
+	display: block;
 }
 
 .series a {
@@ -142,7 +155,7 @@ blockquote p {
 
 
 h2.post-title {
-	font: 2.8em georgia, serif;
+	font: 2.5em georgia, serif;
 	font-weight: bold;
 	color: #454545;
 	margin: 0;
@@ -158,8 +171,9 @@ h2.post-title a:hover {
 }
 
 .post-entry p {
-	font-size: 1.1em;
-	color: #212121;
+	font-size: 1em;
+	line-height: 1.3em;
+	color: #666666;
 }
 
 .post-entry {
@@ -255,8 +269,9 @@ p#single-post-footer a{
 
 #catnav img {
 	float: right;
-	margin-right: 10px;
-	margin-top: -20px;
+	margin-right: 8px;
+	padding-right: 0;
+	padding-top: 3px;
 }
 
 #catnav li{
@@ -264,13 +279,15 @@ p#single-post-footer a{
 	padding-left: 15px;
 	padding-top: 5px;
 	border-bottom: 1px solid #cccccc;
+	font-size: 1.3em;
+	
 }
 
 #catnav li a {
 	display: block;
 	margin-left: -15px;
 	padding: 5px 5px 5px 15px;
-	margin-top: -5px;
+	margin-top: -3px;
 	margin-bottom: 0;
 }
 
@@ -289,10 +306,13 @@ p#single-post-footer a{
 
 #highlights li {
 	margin-top: 10px;
+	font-size: 1.4em;
+	color: #666666;
 }
 
 #highlights p {
 	margin-top: 0;
+	
 }
 
 .highlightlink a{
@@ -441,6 +461,37 @@ div#respond h3 {
 }
 
 
-.post-date a {
-  color: #000000;
+
+div#search {
+	width: 214px;
+	float: left;
+	background: #fffffff;
+	padding-top: 29px;
 }
+
+div#search h2 {
+	color: #999;
+	font-size: 2em;
+	margin: 0;
+}
+
+div#search:hover h2 {
+	color: #454545;
+	font-size: 2em;
+	margin: 0;
+}
+
+
+
+div#search input#s {
+	width: 148px;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.post-date {
+	font-size: .8em;
+	color: #666666;
+}
+
+
+
